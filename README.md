@@ -2,18 +2,11 @@
 
 VLSI implementation of a two-step hybrid Flash Analog-to-Digital Converter for high-frequency applications, designed using Cadence Virtuoso (180nm CMOS) and verified with MATLAB Simulink.
 
----
-
 ## Project Overview
 
 This project presents the design and simulation of a **6-bit Two-Step Flash ADC** (also known as a Half Flash ADC). The architecture splits conversion into two 3-bit stages — a coarse ADC and a fine ADC — reducing hardware complexity while maintaining high conversion speed suitable for high-frequency applications.
 
 Designed and submitted as part of the B.Tech program at the **School of Electronics Engineering, Vellore Institute of Technology, Chennai** (November 2024).
-
----
-
-
----
 
 ## Key Specifications
 
@@ -25,8 +18,6 @@ Designed and submitted as part of the B.Tech program at the **School of Electron
 | Supply Voltage | 1.8 V |
 | INL / DNL | < 1 LSB |
 | Power Dissipation | < 40 mW |
-
----
 
 ## Architecture
 
@@ -40,14 +31,10 @@ The 6-bit ADC uses a **Two-Step Flash** approach with the following sub-blocks:
 - **Comparator** — Core decision element comparing input against reference voltages
 - **2:1 MUX** — Routes signals between stages
 
----
-
 ## Tools Used
 
 - **Cadence Virtuoso** — Schematic design and circuit simulation (180nm PDK)
 - **MATLAB Simulink** — Behavioral-level modeling and verification
-
----
 
 ## Results Summary
 
@@ -60,15 +47,11 @@ All sub-blocks were individually simulated and verified before integration into 
 - **DAC** — Outputs a staircase analog waveform corresponding to digital input codes
 - **6-bit Flash ADC** — Transitions through 64 discrete binary levels across the full input range
 
----
-
 ## Conclusion
 
 The 6-bit two-step flash ADC successfully demonstrated high-speed analog-to-digital conversion with low latency using a parallel comparator structure. The design is well-suited for applications prioritising conversion speed, such as digital oscilloscopes, communication systems, and video processing.
 
 Future work may explore power optimisation techniques like interpolation or time-interleaved architectures to reduce comparator count while preserving speed.
-
----
 
 ## References
 
